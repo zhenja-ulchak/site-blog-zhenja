@@ -62,6 +62,9 @@ PublicAsset::register($this);
                             )
                             . Html::endForm() ?>
                         <?php endif;?>
+
+                        <?php if (Yii::$app->user->identity->isAdmin==1) {echo '<a href="/admin">admin</a>';}?>
+                        
                     </ul>
                 </div>
 

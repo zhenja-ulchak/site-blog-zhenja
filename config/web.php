@@ -6,10 +6,15 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'aliases' => [
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
+    ],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'hIOfqJjbJb53LOVSkf9k7kQdMt8sNt_K',
+            'baseUrl' => '',
         ],
         'user' => [
             'identityClass' => 'app\models\User',
@@ -25,6 +30,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '' => 'site/index',                                
+                '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
             ],
         ],
 
