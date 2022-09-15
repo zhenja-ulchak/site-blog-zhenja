@@ -18,6 +18,7 @@ use yii\widgets\ActiveForm;
         <?= Html::submitButton('Submit', ['class' => 'btn btn-success']) ?>
     </div>
 
+
     <?php ActiveForm::end(); ?>
 
 </div>
