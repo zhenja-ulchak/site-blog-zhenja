@@ -4,7 +4,7 @@ body {
 }
 
 .post-mode {
-    background: #d1cece;
+    background: #e3e0e5b8;
     border-radius: 40px;
 }
 
@@ -12,24 +12,10 @@ body {
     border-radius: 40px 40px 0px 0px;
 }
 
-a.more-link {
-    font-size: 12px;
-    letter-spacing: 1px;
-    overflow: hidden;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin: 24px 0 28px;
-    display: inline-block;
-    color: #00BFF3;
-    border: 1px solid rgb(0, 0, 0);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-}
-
 a.more-link:hover {
-    background: #00BFF3;
-    color: #fff;
-    border-color: #00BFF3;
+    background: #000000a4;
+    color: rgb(255, 255, 255);
+    border-color: #0000001f;
 }
 
 .post-thumb-overlay {
@@ -45,4 +31,23 @@ a.more-link:hover {
     overflow: hidden;
     -webkit-transition: all .5s;
     transition: all .5s;
+}
+
+a.more-link {
+    font-size: 12px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 24px 0 28px;
+    display: inline-block;
+    color: #333333;
+    border: 1px solid #0000001f;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.post .social-share {
+    border-top: 1px solid #0000001f;
+    padding: 15px 0 75px;
 }
