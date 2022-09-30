@@ -1,0 +1,48 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #ffffff;
+}
+
+.post-mode {
+    background: #d1cece;
+    border-radius: 40px;
+}
+
+.post-img {
+    border-radius: 40px 40px 0px 0px;
+}
+
+a.more-link {
+    font-size: 12px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 24px 0 28px;
+    display: inline-block;
+    color: #00BFF3;
+    border: 1px solid rgb(0, 0, 0);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+a.more-link:hover {
+    background: #00BFF3;
+    color: #fff;
+    border-color: #00BFF3;
+}
+
+.post-thumb-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 40px 40px 0px 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}

@@ -6,11 +6,12 @@ use yii\widgets\LinkPager;
 <div class="main-content">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 ">
+            <div class="col-md-10 m-auto">
                 <?php foreach($articles as $article):?>
-                    <article class="post">
-                        <div class="post-thumb">
-                            <a href="<?= Url::toRoute(['site/view', 'id'=>$article->id]);?>"><img src="<?= $article->getImage();?>" alt=""></a>
+                    <article class="post post-mode" >
+                        <div class="post-thumb ">
+                            <a href="<?= Url::toRoute(['site/view', 'id'=>$article->id]);?>"><img class=" post-img " src="<?= $article->getImage();?>" alt=""></a>
 
                             <a href="<?= Url::toRoute(['site/view', 'id'=>$article->id]);?>" class="post-thumb-overlay text-center">
                                 <div class="text-uppercase text-center">View Post</div>
@@ -47,6 +48,7 @@ use yii\widgets\LinkPager;
                         'pagination' => $pagination,
                     ]);
                 ?>
+                </div>
             </div>
             <?= $this->render('/partials/sidebar', [
                 'popular'=>$popular,
