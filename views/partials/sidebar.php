@@ -4,8 +4,20 @@ use yii\helpers\Url;
 <div class="col-md-4" data-sticky_column>
     <div class="primary-sidebar">
 
+    <aside class="widget border pos-padding">
+            <h3 class="widget-title text-uppercase text-center">Категорії</h3>
+            <ul>
+                <?php foreach($categories as $category):?>
+                    <li>
+                        <a href="<?= Url::toRoute(['site/category','id'=>$category->id]);?>"><?= $category->title?></a>
+                        <span class="post-count pull-right"> (<?= $category->getArticlesCount();?>)</span>
+                    </li>
+                <?php endforeach;?>
+
+            </ul>
+        </aside>
         <aside class="widget">
-            <h3 class="widget-title text-uppercase text-center">Popular Posts</h3>
+            <h3 class="widget-title text-uppercase text-center">Популярні пости</h3>
             <?php
 
             foreach($popular as $article):?>
@@ -25,7 +37,7 @@ use yii\helpers\Url;
 
         </aside>
         <aside class="widget pos-padding">
-            <h3 class="widget-title text-uppercase text-center">Recent Posts</h3>
+            <h3 class="widget-title text-uppercase text-center">Нові пости</h3>
             <?php foreach($recent as $article):?>
                 <div class="thumb-latest-posts">
                     <div class="media">
@@ -42,17 +54,6 @@ use yii\helpers\Url;
                 </div>
             <?php endforeach;?>
         </aside>
-        <aside class="widget border pos-padding">
-            <h3 class="widget-title text-uppercase text-center">Categories</h3>
-            <ul>
-                <?php foreach($categories as $category):?>
-                    <li>
-                        <a href="<?= Url::toRoute(['site/category','id'=>$category->id]);?>"><?= $category->title?></a>
-                        <span class="post-count pull-right"> (<?= $category->getArticlesCount();?>)</span>
-                    </li>
-                <?php endforeach;?>
-
-            </ul>
-        </aside>
+        
     </div>
 </div>

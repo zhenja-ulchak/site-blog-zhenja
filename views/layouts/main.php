@@ -38,34 +38,36 @@ PublicAsset::register($this);
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img src="/public/images/logo.jpg" alt=""></a>
+                <a class="navbar-brand logo-main" href="/"><img src="/public/images/logo.jpg" alt="">LOGO</a>
             </div>
 
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
+                <div class="i_con ">
                 <ul class="nav navbar-nav text-uppercase">
-                    <li><a data-toggle="dropdown" class="dropdown-toggle" href="/">Home</a>
-
-                    </li>
+                    <li><a data-toggle="dropdown" class="dropdown-toggle text-color-heder"  href="/">Головна</a></li>
                 </ul>
-                <div class="i_con">
-                    <ul class="nav navbar-nav text-uppercase">
+                    <ul class="nav navbar-nav text-uppercase text-color-heder">
+
                         <?php if(Yii::$app->user->isGuest):?>
-                            <li><a href="<?= Url::toRoute(['auth/login'])?>">Login</a></li>
-                            <li><a href="<?= Url::toRoute(['auth/signup'])?>">Register</a></li>
+                            <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/login'])?>">Login</a></li>
+                            <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/signup'])?>">Register</a></li>
                         <?php else: ?>
                             <?= Html::beginForm(['/auth/logout'], 'post')
                             . Html::submitButton(
                                 'Logout (' . Yii::$app->user->identity->name . ')',
-                                ['class' => 'btn btn-link logout', 'style'=>"padding-top:10px;"]
+                                ['class' => 'btn btn-link logout', 'style'=>"padding-top:21px; color: #ffffff "]
                             )
                             . Html::endForm() ?>
                         <?php endif;?>
 
-                        <?php if (Yii::$app->user->identity->isAdmin==1) {echo '<a href="/admin">admin</a>';}?>
+                   
                         
                     </ul>
+                    <ul class="nav navbar-nav text-uppercase">
+                    <li>     <?php if (Yii::$app->user->identity->isAdmin==1) {echo '<a class="text-color-heder margin-admin" href="/admin">admin</a>';}?></li>
+                </ul>
                 </div>
 
             </div>
@@ -74,6 +76,13 @@ PublicAsset::register($this);
     </div>
     <!-- /.container-fluid -->
 </nav>
+<div class="first-block-main">
+    <div class="main-container">
+        <h1 class="first-block-h1">Кулінарний блог для всіх </h1>
+        <p class="first-block-p"> Страви які підійдуть як і для кафе так , для дому також , тим хто любить мясо та солодке для діабетиків та людей яким потрібно тримати дієту</p>
+    </div>
+
+</div>
 
 
 <?= $content ?>
