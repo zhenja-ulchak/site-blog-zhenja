@@ -34,6 +34,20 @@ Table of contents
 
 -------------------------------------------------------------------*/
 
+.post-content-mode {
+    padding: 0 43px;
+    overflow: hidden;
+    background: #ffffffde;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.block-main {
+    width: 100%;
+    height: 400px;
+    background: #00000082;
+    z-index: 1024;
+}
+
 .first-block-main {
     width: 100%;
     height: 400px;
@@ -59,7 +73,7 @@ Table of contents
 
 .main-container {
     text-align: center;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .logo-main {
@@ -67,7 +81,7 @@ Table of contents
 }
 
 .post-mode {
-    background: #e3e0e5b8;
+    background: #ffffffde;
     border-radius: 40px;
 }
 
@@ -383,7 +397,11 @@ post css
  ===================*/
 
 .main-content {
-    margin-top: 50px;
+    padding-top: 50px;
+    background-image: url(/web/public/images/image-all.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 article {
@@ -428,6 +446,7 @@ article {
 
 .post-thumb img {
     max-width: 100%;
+    border-radius: 40px 40px 0px 0px;
 }
 
 .post {
@@ -438,6 +457,8 @@ article {
 .post-content {
     padding: 0 43px;
     overflow: hidden;
+    background: #ffffffde;
+    border-radius: 0px 0px 40px 40px;
 }
 
 .social-share span a {
@@ -575,7 +596,7 @@ about me
 .widget {
     padding: 37px 30px;
     margin-bottom: 35px;
-    background-color: #e3e0e5b8;
+    background-color: #ffffffde;
     border: 1px solid rgb(180 180 180 / 67%);
     border-radius: 40px;
 }

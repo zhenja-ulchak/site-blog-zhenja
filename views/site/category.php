@@ -23,7 +23,7 @@ use yii\widgets\LinkPager;
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="post-content">
+                            <div class="post-content-mode">
                                 <header class="entry-header text-uppercase">
                                     <h6><a href="<?= Url::toRoute(['site/category','id'=>$article->category->id]);?>"> <?= $article->category->title?></a></h6>
 
