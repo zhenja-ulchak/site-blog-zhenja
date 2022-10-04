@@ -4,9 +4,10 @@ use yii\widgets\LinkPager;
 ?>
 <!--main content start-->
 <div class="main-content">
+<div class="back-main-content">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 ">
+            <div class="col-md-8 margin-top-block">
             
                 <?php foreach($articles as $article):?>
                     <article class="post post-mode" >
@@ -57,6 +58,7 @@ use yii\widgets\LinkPager;
                 
             ]);?>
         </div>
+    </div>
     </div>
 </div>
 <!-- end main content-->

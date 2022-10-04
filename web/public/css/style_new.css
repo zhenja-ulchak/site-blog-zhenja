@@ -34,6 +34,26 @@ Table of contents
 
 -------------------------------------------------------------------*/
 
+.marg-img {
+    margin-top: 55px;
+}
+
+.margin-top-block {
+    margin-top: 50px !important;
+}
+
+.fixed-nav-bar-main {
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 1025 !important;
+    position: fixed !important;
+}
+
+.back-main-content {
+    background-color: #0000006b;
+    padding-top: 50px;
+}
+
 .entry-content {
     margin-bottom: 20px !important;
 }
@@ -46,6 +66,7 @@ Table of contents
 }
 
 .block-main {
+    margin-top: 87px;
     width: 100%;
     height: 400px;
     background: #00000082;
@@ -401,7 +422,7 @@ post css
  ===================*/
 
 .main-content {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     background-image: url(/web/public/images/image-all.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -426,8 +447,6 @@ article {
     margin-top: 0;
     font-size: 24px;
 }
-
-.entry-header h6 {}
 
 .entry-header h6 a {
     color: #00acdf;
@@ -1394,8 +1413,6 @@ about me
     padding-right: 30px;
     padding-bottom: 30px;
 }
-
-.about-us-text {}
 
 .about-us-text h4 {
     letter-spacing: 1px;

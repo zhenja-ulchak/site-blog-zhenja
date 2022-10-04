@@ -26,7 +26,7 @@ PublicAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<nav class="navbar main-menu navbar-default">
+<nav class="navbar main-menu navbar-default fixed-nav-bar-main">
     <div class="container">
         <div class="menu-content">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -85,7 +85,7 @@ PublicAsset::register($this);
     <div class="main-container">
         <h1 class="first-block-h1">Кулінарний блог для всіх </h1>
         <p class="first-block-p"> Страви які підійдуть як і для кафе так , для дому також , тим хто любить мясо та солодке для діабетиків та людей яким потрібно тримати дієту</p>
-        <div>
+        <div class="marg-img ">
             <img src="/web/public/images/free-icon-down-arrow.png" style="width:100px;" alt="">
         </div>
     </div>
