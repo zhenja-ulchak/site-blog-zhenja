@@ -13,7 +13,7 @@ use yii\widgets\LinkPager;
                 foreach($articles as $article):?>
                     <article class="post post-list">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="">
                             <div class="post-thumb">
                                 <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><img src="<?= $article->getImage();?>" alt="" class="pull-left"></a>
 
@@ -22,7 +22,7 @@ use yii\widgets\LinkPager;
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class=" ">
                             <div class="post-content-mode">
                                 <header class="entry-header text-uppercase">
                                     <h6><a href="<?= Url::toRoute(['site/category','id'=>$article->category->id]);?>"> <?= $article->category->title?></a></h6>
