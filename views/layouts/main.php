@@ -47,9 +47,12 @@ PublicAsset::register($this);
                 <div class="i_con ">
                 <ul class="nav navbar-nav text-uppercase">
                     <li><a data-toggle="dropdown" class="dropdown-toggle text-color-heder"  href="/">Головна</a></li>
+                    </ul>
+                <ul class="nav navbar-nav text-uppercase">
+                <li><a class="text-color-heder" href="<?= Url::toRoute(['site/contact'])?>">contact</a></li>
                 </ul>
                     <ul class="nav navbar-nav text-uppercase text-color-heder">
-
+        
                         <?php if(Yii::$app->user->isGuest):?>
                             <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/login'])?>">Login</a></li>
                             <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/signup'])?>">Register</a></li>

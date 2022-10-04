@@ -14,7 +14,7 @@ use yii\widgets\LinkPager;
                             <a href="<?= Url::toRoute(['site/view', 'id'=>$article->id]);?>"><img class="post-image" src="<?= $article->getImage();?>" alt=""></a>
 
                             <a href="<?= Url::toRoute(['site/view', 'id'=>$article->id]);?>" class="post-thumb-overlay text-center">
-                                <div class="text-uppercase text-center">View Post</div>
+                                <div class="text-uppercase text-center">Оглянути</div>
                             </a>
                         </div>
                         <div class="post-content">
@@ -36,7 +36,7 @@ use yii\widgets\LinkPager;
                             <div class="social-share">
                                 <span class="social-share-title pull-left text-capitalize">By <?= $article->author->name; ?> On <?= $article->getDate();?></span>
                                 <ul class="text-center pull-right">
-                                    <li><a class="s-facebook" href="#"><i class="fa fa-eye"></i></a></li><?= (int) $article->viewed?>
+                                    <li><a class="s-facebook" href="#"><img src="/web/public/images/eyes-cartoon.png" style="margin-right: 10px;" alt=""></a></li><?= (int) $article->viewed?>
                                 </ul>
                             </div>
                         </div>

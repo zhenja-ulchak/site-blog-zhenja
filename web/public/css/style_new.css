@@ -34,6 +34,10 @@ Table of contents
 
 -------------------------------------------------------------------*/
 
+.entry-content {
+    margin-bottom: 20px !important;
+}
+
 .post-content-mode {
     padding: 0 43px;
     overflow: hidden;
@@ -457,7 +461,7 @@ article {
 .post-content {
     padding: 0 43px;
     overflow: hidden;
-    background: #ffffffde;
+    background: #fffffff8;
     border-radius: 0px 0px 40px 40px;
 }
 
@@ -597,7 +601,7 @@ about me
 .widget {
     padding: 37px 30px;
     margin-bottom: 35px;
-    background-color: #ffffffde;
+    background-color: #ffffffea;
     border: 1px solid rgb(180 180 180 / 67%);
     border-radius: 40px;
 }
