@@ -8,13 +8,13 @@ use yii\helpers\Url;
             <div class="col-md-8">
                 <article class="post">
                     <div class="post-thumb">
-                        <a href="blog.html"><img src="<?= $article->getImage();?>" alt=""></a>
+                        <img src="<?= $article->getImage();?>" alt="">
                     </div>
                     <div class="post-content">
                         <header class="entry-header text-center text-uppercase">
-                            <h6><a href="<?= Url::toRoute(['site/category','id'=>$article->category->id])?>"> <?= $article->category->title?></a></h6>
+                            <h6> <?= $article->category->title?></h6>
 
-                            <h1 class="entry-title"><a href="<?= Url::toRoute(['site/view','id'=>$article->id])?>"><?= $article->title?></a></h1>
+                            <h1 class="entry-title"><b><?= $article->title?></b></h1>
 
 
                         </header>
