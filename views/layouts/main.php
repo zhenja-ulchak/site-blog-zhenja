@@ -54,8 +54,8 @@ PublicAsset::register($this);
                     <ul class="nav navbar-nav text-uppercase text-color-heder">
         
                         <?php if(Yii::$app->user->isGuest):?>
-                            <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/login'])?>">Login</a></li>
-                            <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/signup'])?>">Register</a></li>
+                            <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/login'])?>">Увійти</a></li>
+                            <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/signup'])?>">Зареєструватись</a></li>
                         <?php else: ?>
                             <?= Html::beginForm(['/auth/logout'], 'post')
                             . Html::submitButton(
@@ -89,9 +89,7 @@ PublicAsset::register($this);
             <div class="col-md-12">
                 <aside class="footer-widget">
                     <div class="about-img"><img src="/public/images/logo2.png" alt=""></div>
-                    <div class="about-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua. At vero eos et
-                        accusam et justo duo dlores et ea rebum magna text ar koto din.
+                    <div class="about-content">інфа
                     </div>
                     <div class="address">
 
@@ -100,13 +98,11 @@ PublicAsset::register($this);
                                 <a class="s-twitter" href="#"><img src="/web/public/images/twitter.png" style="margin-right: 10px;" alt=""></a>
                                 <a class="s-instagram" href="#"><img src="/web/public/images/instagram.png" style="margin-right: 10px;" alt=""></a>
                                 </span>
-                        <h4 class="text-uppercase">contact Info</h4>
+                        <h4 class="text-uppercase">Контактна інформація</h4>
 
-                        <p> 14529/12 NK Streets, DC, KZ</p>
+                        <p> Україна м. Ужгород вул. Проспект свободи 42</p>
 
-                        <p> Phone: +123 456 78900</p>
-
-                        <p>mytreasure.com</p>
+                        <p>Email: super-zhenja@ukr.com</p>
                     </div>
                 </aside>
             </div>
