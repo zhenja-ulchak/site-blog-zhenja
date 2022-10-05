@@ -42,7 +42,7 @@ use yii\helpers\Url;
                 <div class="thumb-latest-posts">
                     <div class="media">
                         <div class="media-left">
-                            <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="popular-img"><img src="<?= $article->getImage();?>" alt="">
+                            <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="mainpop-img"><img style="    border-radius: 40px;" src="<?= $article->getImage();?>" alt="">
                                 <div class="p-overlay"></div>
                             </a>
                         </div>

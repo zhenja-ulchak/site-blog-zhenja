@@ -34,6 +34,20 @@ Table of contents
 
 -------------------------------------------------------------------*/
 
+.mainpop-img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.navbar-brand-main {
+    float: left;
+    height: 50px;
+    padding: 0px 0px !important;
+    font-size: 18px;
+    line-height: 20px;
+}
+
 .block-darck {
     width: 100%;
     background: #00000082;
@@ -113,7 +127,7 @@ Table of contents
 }
 
 .logo-main {
-    margin: 8px;
+    margin: 0px;
 }
 
 .post-mode {

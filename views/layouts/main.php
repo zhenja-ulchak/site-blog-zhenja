@@ -38,7 +38,7 @@ PublicAsset::register($this);
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand logo-main" href="/"><img src="/public/images/logo.jpg" alt="">LOGO</a>
+                <a class="navbar-brand-main logo-main" href="/"><img src="/web/public/images/logo.png" style="    width: 65px;" alt=""></a>
             </div>
 
 
@@ -49,7 +49,7 @@ PublicAsset::register($this);
                     <li><a data-toggle="dropdown" class="dropdown-toggle text-color-heder"  href="/">Головна</a></li>
                     </ul>
                 <ul class="nav navbar-nav text-uppercase">
-                <li><a class="text-color-heder" href="<?= Url::toRoute(['site/contact'])?>">contact</a></li>
+                <li><a class="text-color-heder" href="<?= Url::toRoute(['site/contact'])?>">Про нас</a></li>
                 </ul>
                     <ul class="nav navbar-nav text-uppercase text-color-heder">
         
