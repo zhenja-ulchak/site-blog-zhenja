@@ -34,6 +34,17 @@ Table of contents
 
 -------------------------------------------------------------------*/
 
+.block-darck {
+    width: 100%;
+    background: #00000082;
+    z-index: 1024;
+}
+
+.post-box-shadow {
+    border-radius: 40px;
+    box-shadow: 0 4px 10px -2px rgb(194, 193, 193);
+}
+
 .marg-img {
     margin-top: 55px;
 }
@@ -68,14 +79,14 @@ Table of contents
 .block-main {
     margin-top: 87px;
     width: 100%;
-    height: 400px;
+    height: 96vh;
     background: #00000082;
     z-index: 1024;
 }
 
 .first-block-main {
     width: 100%;
-    height: 400px;
+    height: 96vh;
     background: #e2e2e2;
     margin-top: -20px;
     background-image: url(/web/public/images/first-block.jpg);
@@ -98,7 +109,7 @@ Table of contents
 
 .main-container {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 23%;
 }
 
 .logo-main {
@@ -107,7 +118,7 @@ Table of contents
 
 .post-mode {
     background: #ffffffde;
-    border-radius: 40px;
+    border-radius: 40px !important;
 }
 
 .post-image {
@@ -431,6 +442,7 @@ post css
 
 article {
     border: 1px solid #eee;
+    box-shadow: 0 4px 10px -2px rgb(194 193 193);
 }
 
 .entry-header {
@@ -474,7 +486,7 @@ article {
 
 .post {
     margin-bottom: 50px;
-    border-radius: 40px;
+    border-radius: 40px !important;
 }
 
 .post-content {
@@ -623,6 +635,7 @@ about me
     background-color: #ffffffea;
     border: 1px solid rgb(180 180 180 / 67%);
     border-radius: 40px;
+    box-shadow: 0 4px 10px -2px rgb(194 193 193);
 }
 
 .about-me-widget {
@@ -1224,6 +1237,8 @@ blog css
 }
 
 .leave-comment {
+    border-radius: 40px;
+    box-shadow: 0 4px 10px -2px rgb(194 193 193);
     background-color: #fff;
     margin: 30px 0;
     padding: 20px;

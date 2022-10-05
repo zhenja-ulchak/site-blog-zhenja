@@ -3,10 +3,11 @@ use yii\helpers\Url;
 ?>
 <!--main content start-->
 <div class="main-content">
+<div class="block-darck">
     <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <article class="post">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-8 margin-top-block">
+                <article class="post post-box-shadow">
                     <div class="post-thumb">
                         <img src="<?= $article->getImage();?>" alt="">
                     </div>
@@ -50,6 +51,7 @@ use yii\helpers\Url;
                 'categories'=>$categories
             ]);?>
         </div>
+    </div>
     </div>
 </div>
 <!-- end main content-->

@@ -3,7 +3,19 @@ use yii\helpers\Url;
 use yii\widgets\LinkPager;
 ?>
 <!--main content start-->
+<div class="first-block-main">
+<div class="block-main">
+    <div class="main-container">
+        <h1 class="first-block-h1">Кулінарний блог для всіх </h1>
+        <p class="first-block-p"> Страви які підійдуть як і для кафе так , для дому також , тим хто любить мясо та солодке для діабетиків та людей яким потрібно тримати дієту</p>
+        <div class="marg-img ">
+            <img src="/web/public/images/free-icon-down-arrow.png" style="width:100px;" alt="">
+        </div>
+    </div>
+
+</div>
 <div class="main-content">
+    <div></div>
 <div class="back-main-content">
     <div class="container">
         <div class="row">
