@@ -23,8 +23,7 @@ use yii\helpers\Url;
                             <?= $article->content?>
                         </div>
                         <div class="decoration" style="magin-top:20px;">
-                            <!-- <a href="#" class="btn btn-default">Decoration</a>
-                            <a href="#" class="btn btn-default">Decoration</a> -->
+                    
                         </div>
 
                         <div class="social-share">
