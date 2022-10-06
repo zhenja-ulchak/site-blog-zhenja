@@ -83,6 +83,7 @@ Table of contents
     width: 100% !important;
     z-index: 1025 !important;
     position: fixed !important;
+    background-color: #000000;
 }
 
 .back-main-content {
