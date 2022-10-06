@@ -34,6 +34,17 @@ Table of contents
 
 -------------------------------------------------------------------*/
 
+
+/* .block-registration {
+    /* margin-top: 220px; */
+
+
+/* } */
+
+.form-control {
+    border-color: #a7a7a770 !important;
+}
+
 .mainpop-img {
     position: relative;
     width: 100%;
@@ -1251,12 +1262,13 @@ blog css
 }
 
 .leave-comment {
-    border-radius: 40px;
-    box-shadow: 0 4px 10px -2px rgb(194 193 193);
+    height: 68vh;
     background-color: #fff;
-    margin: 30px 0;
     padding: 20px;
     color: #212121;
+    background-image: url(/web/public/images/registration.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .leave-comment h4 {
@@ -1668,4 +1680,16 @@ p.go-back-home a:hover {
     background: #00BFF3;
     color: #fff;
     border-color: #00BFF3;
+}
+
+@media (max-width: 1500px) {
+    .leave-comment {
+        height: 68vh;
+        background-color: #fff;
+        padding: 20px;
+        color: #212121;
+        background-image: url(/web/public/images/registration.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
 }

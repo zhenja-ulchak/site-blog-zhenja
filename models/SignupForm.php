@@ -13,7 +13,9 @@ class SignupForm extends Model
     public function rules()
     {
         return [
-            [['name','email','password'], 'required'],
+            [['name'], 'required', 'message' => 'Введіть правильне імя.'],
+            [['email',], 'required', 'message' => 'Введіть правильний емейл.'],
+            [['password'], 'required', 'message' => 'Введіть правильний пароль.'],
             [['name'], 'string'],
             [['email'], 'email'],
             [['email'], 'unique', 'targetClass'=>'app\models\User', 'targetAttribute'=>'email']
