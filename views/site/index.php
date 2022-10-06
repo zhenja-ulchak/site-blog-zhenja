@@ -15,7 +15,6 @@ use yii\widgets\LinkPager;
 
 </div>
 <div class="main-content">
-    <div></div>
 <div class="back-main-content">
     <div class="container">
         <div class="row">
