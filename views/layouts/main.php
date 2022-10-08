@@ -29,17 +29,54 @@ PublicAsset::register($this);
 <nav class="navbar   fixed-nav-bar-main">
     <div class="container">
         <div class="menu-content">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand-main logo-main" href="/"><img src="/web/public/images/logo.png" style="    width: 65px;" alt=""></a>
+            <div style="float:left;">
+            <a class="navbar-brand-main logo-main" href="/">
+                <img src="/web/public/images/logo.png" style="width: 65px;" alt="">
+            </a>
             </div>
+            <div class="dropdown" style="float:right;">
+                 <button type="button" class="navbar-toggle collapsed dropbtn" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+            <div class="dropdown-content">
+                <div class="i_con ">
+                     <ul class="nav navbar-nav text-uppercase">
+                        <li>
+                            <a data-toggle="dropdown" class="dropdown-toggle text-color-heder"  href="/">Головна</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav text-uppercase">
+                        <li>
+                            <a class="text-color-heder" href="<?= Url::toRoute(['site/contact'])?>">Про нас</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav text-uppercase text-color-heder">
+                    <?php if(Yii::$app->user->isGuest):?>
+                        <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/login'])?>">Увійти</a></li>
+                        <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/signup'])?>">Зареєструватись</a></li>
+                    <?php else: ?>
+                        <?= Html::beginForm(['/auth/logout'], 'post')
+                        . Html::submitButton(
+                            'Вийти (' . Yii::$app->user->identity->name . ')',
+                            ['class' => 'btn btn-link logout', 'style'=>"padding-top:21px; color: #ffffff "]
+                        )
+                        . Html::endForm() ?>
+                    <?php endif;?>  
+                    </ul>
+                    <ul class="nav navbar-nav text-uppercase">
+                        <li>     
+                            <?php if (Yii::$app->user->identity->isAdmin==1) {echo '<a class="text-color-heder margin-admin" href="/admin">admin</a>';}?>
+                        </li>
+                    </ul>
+            </div>
+
+</div>
+  </div>
+</div>
 
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
