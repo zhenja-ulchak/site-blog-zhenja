@@ -54,6 +54,11 @@ PublicAsset::register($this);
                             <a class="text-color-heder" href="<?= Url::toRoute(['site/contact'])?>">Про нас</a>
                         </li>
                     </ul>
+                    <ul class=" text-uppercase">
+                        <li>
+                            <a class="text-color-heder" href="<?= Url::toRoute(['site/allcat'])?>">категорії</a>
+                        </li>
+                    </ul>
                     <ul class=" text-uppercase text-color-heder">
                     <?php if(Yii::$app->user->isGuest):?>
                         <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/login'])?>">Увійти</a></li>
@@ -88,6 +93,11 @@ PublicAsset::register($this);
                 <ul class=" navbar-nav text-uppercase" style="margin-right: 15px;">
                 <li><a class="text-color-heder" href="<?= Url::toRoute(['site/contact'])?>">Про нас</a></li>
                 </ul>
+                <ul class="  navbar-nav text-uppercase">
+                        <li>
+                            <a class="text-color-heder" style="margin-right: 15px;" href="<?= Url::toRoute(['site/categoryall'])?>">категорії</a>
+                        </li>
+                    </ul>
                     <ul class=" navbar-nav text-uppercase text-color-heder" style="margin-right: 15px;">
         
                         <?php if(Yii::$app->user->isGuest):?>

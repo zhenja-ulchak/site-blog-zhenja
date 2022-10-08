@@ -133,8 +133,14 @@ class SiteController extends Controller
             }
         }
     }
+
     public function actionContact (){
         return $this->render('contact');
+    }
+
+    public function actionCategoryall (){
+        $categories = Category::getAll();
+        return $this->render('categoryall',['categories'=>$categories]);
     }
 
 }
