@@ -37,24 +37,24 @@ PublicAsset::register($this);
             <div class="dropdown" style="float:right;">
                  <button type="button" class="navbar-toggle collapsed dropbtn" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
+    
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
             <div class="dropdown-content">
                 <div class="i_con ">
-                     <ul class="nav navbar-nav text-uppercase">
+                     <ul class=" text-uppercase">
                         <li>
                             <a data-toggle="dropdown" class="dropdown-toggle text-color-heder"  href="/">Головна</a>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav text-uppercase">
+                    <ul class=" text-uppercase">
                         <li>
                             <a class="text-color-heder" href="<?= Url::toRoute(['site/contact'])?>">Про нас</a>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav text-uppercase text-color-heder">
+                    <ul class=" text-uppercase text-color-heder">
                     <?php if(Yii::$app->user->isGuest):?>
                         <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/login'])?>">Увійти</a></li>
                         <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/signup'])?>">Зареєструватись</a></li>
@@ -67,7 +67,7 @@ PublicAsset::register($this);
                         . Html::endForm() ?>
                     <?php endif;?>  
                     </ul>
-                    <ul class="nav navbar-nav text-uppercase">
+                    <ul class=" text-uppercase">
                         <li>     
                             <?php if (Yii::$app->user->identity->isAdmin==1) {echo '<a class="text-color-heder margin-admin" href="/admin">admin</a>';}?>
                         </li>
@@ -82,16 +82,16 @@ PublicAsset::register($this);
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <div class="i_con ">
-                <ul class="nav navbar-nav text-uppercase">
+                <ul class=" navbar-nav text-uppercase" style="margin-right: 15px;">
                     <li><a data-toggle="dropdown" class="dropdown-toggle text-color-heder"  href="/">Головна</a></li>
                     </ul>
-                <ul class="nav navbar-nav text-uppercase">
+                <ul class=" navbar-nav text-uppercase" style="margin-right: 15px;">
                 <li><a class="text-color-heder" href="<?= Url::toRoute(['site/contact'])?>">Про нас</a></li>
                 </ul>
-                    <ul class="nav navbar-nav text-uppercase text-color-heder">
+                    <ul class=" navbar-nav text-uppercase text-color-heder" style="margin-right: 15px;">
         
                         <?php if(Yii::$app->user->isGuest):?>
-                            <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/login'])?>">Увійти</a></li>
+                            <li style="margin-right: 15px;"><a class="text-color-heder" href="<?= Url::toRoute(['auth/login'])?>">Увійти</a></li>
                             <li><a class="text-color-heder" href="<?= Url::toRoute(['auth/signup'])?>">Зареєструватись</a></li>
                         <?php else: ?>
                             <?= Html::beginForm(['/auth/logout'], 'post')
@@ -105,7 +105,7 @@ PublicAsset::register($this);
                    
                         
                     </ul>
-                    <ul class="nav navbar-nav text-uppercase">
+                    <ul class=" navbar-nav text-uppercase">
                     <li>     <?php if (Yii::$app->user->identity->isAdmin==1) {echo '<a class="text-color-heder margin-admin" href="/admin">admin</a>';}?></li>
                 </ul>
                 </div>
