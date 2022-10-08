@@ -5,7 +5,7 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 
-$this->title = 'About';
+$this->title = 'Категорії';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="col-md-12 margin-top-block" data-sticky_column>
@@ -14,6 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <aside class="widget border pos-padding">
             <h3 class="widget-title text-uppercase text-center">Категорії</h3>
             <ul>
+                
                 <?php foreach($categories as $category):?>
                     <li>
                         <a href="<?= Url::toRoute(['site/category','id'=>$category->id]);?>"><?= $category->title?></a>
