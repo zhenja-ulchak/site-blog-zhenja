@@ -97,7 +97,7 @@ ul {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #565857;
 }
 
 .form-control {
@@ -131,6 +131,7 @@ ul {
 
 .marg-img {
     margin-top: 55px;
+    text-align: center;
 }
 
 .margin-top-block {
@@ -1662,6 +1663,10 @@ p.go-back-home a:hover {
     background: #00BFF3;
     color: #fff;
     border-color: #00BFF3;
+}
+
+.navbar {
+    border-radius: 0px !important;
 }
 
 @media (max-width: 1500px) {
