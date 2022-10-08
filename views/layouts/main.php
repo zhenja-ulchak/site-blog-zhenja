@@ -26,7 +26,7 @@ PublicAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<nav class="navbar main-menu navbar-default fixed-nav-bar-main">
+<nav class="navbar   fixed-nav-bar-main">
     <div class="container">
         <div class="menu-content">
             <!-- Brand and toggle get grouped for better mobile display -->
