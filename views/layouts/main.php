@@ -97,7 +97,7 @@ PublicAsset::register($this);
                             <?= Html::beginForm(['/auth/logout'], 'post')
                             . Html::submitButton(
                                 'Вийти (' . Yii::$app->user->identity->name . ')',
-                                ['class' => 'btn btn-link logout', 'style'=>"padding-top:21px; color: #ffffff "]
+                                ['class' => 'btn btn-link logout', 'style'=>"padding-top:14px; color: #ffffff "]
                             )
                             . Html::endForm() ?>
                         <?php endif;?>
