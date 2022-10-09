@@ -83,6 +83,7 @@ class SiteController extends Controller
     
     public function actionView($id)
     {
+        Yii::$app->view->title = "Название страницы";
         $article = Article::findOne($id);
         $popular = Article::getPopular();
         $recent = Article::getRecent();

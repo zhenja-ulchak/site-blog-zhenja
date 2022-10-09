@@ -1,5 +1,12 @@
 <?php
 use yii\helpers\Url;
+
+$this->title = $article->title;
+\Yii::$app->view->registerMetaTag([
+    'name' => 'description',
+    'content' => $article->description,
+    ]);
+    $this->head()
 ?>
 <!--main content start-->
 <div class="main-content">
