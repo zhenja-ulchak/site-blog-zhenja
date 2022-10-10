@@ -34,6 +34,10 @@ Table of contents
 
 -------------------------------------------------------------------*/
 
+.pull-right-main {
+    float: none !important;
+}
+
 ul {
     list-style: none;
 }
@@ -713,7 +717,7 @@ subscribe newsletter
 }
 
 .widget-title {
-    font-size: 18px;
+    font-size: 25px;
     margin: 0 0 25px;
     letter-spacing: 0.5px;
     color: #333333;
@@ -923,7 +927,7 @@ Categories
 
 .widget ul li a {
     line-height: 26px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
     color: #323232;
     text-decoration: none;
@@ -1191,11 +1195,12 @@ blog css
 }
 
 .bottom-comment {
-    background: #fff;
-    padding: 20px;
-    margin: 50px 0;
-    color: #212121;
-    overflow: hidden;
+    padding: 37px 30px;
+    margin-bottom: 35px;
+    background-color: #ffffffea;
+    border: 1px solid rgb(180 180 180 / 67%);
+    border-radius: 40px;
+    box-shadow: 0 4px 10px -2px rgb(194 193 193);
 }
 
 .bottom-comment .comment-text {
@@ -1242,6 +1247,15 @@ blog css
 
 .bottom-comment a.replay:hover {
     background-color: #ddd;
+}
+
+.leave-comment-main {
+    padding: 37px 30px;
+    margin-bottom: 35px;
+    background-color: #ffffffea;
+    border: 1px solid rgb(180 180 180 / 67%);
+    border-radius: 40px;
+    box-shadow: 0 4px 10px -2px rgb(194 193 193);
 }
 
 .leave-comment {
@@ -1667,6 +1681,13 @@ p.go-back-home a:hover {
 
 .navbar {
     border-radius: 0px !important;
+}
+
+@media (min-width: 911px) {
+    .w-main {
+        width: 50%;
+        margin-left: 25%;
+    }
 }
 
 @media (max-width: 1500px) {

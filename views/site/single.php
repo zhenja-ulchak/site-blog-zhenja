@@ -2,12 +2,14 @@
 use yii\helpers\Url;
 
 $this->title = $article->title;
-\Yii::$app->view->registerMetaTag([
+Yii::$app->view->registerMetaTag([
     'name' => 'description',
-    'content' => $article->description,
+    'content' => $article->title,
     ]);
-    $this->head()
+   
+
 ?>
+
 <!--main content start-->
 <div class="main-content">
 <div class="block-darck">

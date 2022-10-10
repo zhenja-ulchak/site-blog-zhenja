@@ -4,10 +4,10 @@ use yii\widgets\LinkPager;
 
 ?>
 <!--main content start-->
-<div class="main-content">
+<div class="main-content" style="padding-top:100px;">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8" style="    margin-top: 47px;">
                 <?php
 
                 foreach($articles as $article):?>
