@@ -137,11 +137,10 @@ PublicAsset::register($this);
         <div class="row">
             <div class="col-md-12">
                 <aside class="footer-widget">
-                    <div class="about-img"><img src="/public/images/logo2.png" alt=""></div>
-                    <div class="about-content">інфа
+                  
+                    <div class="about-content">
                     </div>
                     <div class="address">
-
                   <span>
                                 <a class="s-facebook" href="#"><img src="/web/public/images/facebook.png" style="margin-right: 10px;" alt=""></a>
                                 <a class="s-twitter" href="#"><img src="/web/public/images/twitter.png" style="margin-right: 10px;" alt=""></a>
@@ -149,7 +148,7 @@ PublicAsset::register($this);
                                 </span>
                         <h4 class="text-uppercase">Контактна інформація</h4>
 
-                        <p> Україна м. Ужгород вул. Проспект свободи 42</p>
+                        <p> Україна м. Ужгород</p>
 
                         <p>Email: super-zhenja@ukr.com</p>
                     </div>

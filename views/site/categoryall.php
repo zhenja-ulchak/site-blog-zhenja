@@ -9,10 +9,10 @@ $this->title = 'Категорії';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<div class="col-md-12   margin-top-block" data-sticky_column>
+<div class="col-md-12  first-block-main-categoryall margin-top-block" data-sticky_column>
     <div class="primary-sidebar w-main">
 
-    <aside class="widget border pos-padding" style="margin-top: 100px;">
+    <aside class="widget border pos-padding" style="margin-top: 53px;">
             <h1 class="widget-title text-uppercase text-center">Категорії</h1>
             <br>
     
