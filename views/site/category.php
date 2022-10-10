@@ -15,7 +15,7 @@ use yii\widgets\LinkPager;
                     <div class="row">
                         <div class="">
                             <div class="post-thumb">
-                                <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><img src="<?= $article->getImage();?>" alt="" class="pull-left"></a>
+                                <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><img style="width: 100%;" src="<?= $article->getImage();?>" alt="" class="pull-left"></a>
 
                                 <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="post-thumb-overlay text-center">
                                     <div class="text-uppercase text-center">View Post</div>
@@ -27,7 +27,7 @@ use yii\widgets\LinkPager;
                                 <header class="entry-header text-uppercase">
                                     <h6><a href="<?= Url::toRoute(['site/category','id'=>$article->category->id]);?>"> <?= $article->category->title?></a></h6>
 
-                                    <h1 class="entry-title"><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>">Home is peaceful place</a></h1>
+                                    <h1 class="entry-title"><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><?= $article->title?></a></h1>
                                 </header>
                                 <div class="entry-content">
                                     <p><?= $article->description?>

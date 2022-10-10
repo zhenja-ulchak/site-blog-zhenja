@@ -23,7 +23,7 @@ use yii\widgets\LinkPager;
                 <?php foreach($articles as $article):?>
                     <article class="post post-mode" >
                         <div class="post-thumb ">
-                            <a href="<?= Url::toRoute(['site/view', 'id'=>$article->id]);?>"><img class="post-image" src="<?= $article->getImage();?>" alt=""></a>
+                            <a href="<?= Url::toRoute(['site/view', 'id'=>$article->id]);?>"><img style="width: 100%;" class="post-image" src="<?= $article->getImage();?>" alt=""></a>
 
                             <a href="<?= Url::toRoute(['site/view', 'id'=>$article->id]);?>" class="post-thumb-overlay text-center">
                                 <div class="text-uppercase text-center">Оглянути</div>
