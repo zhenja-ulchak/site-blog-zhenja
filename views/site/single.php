@@ -39,9 +39,9 @@ Yii::$app->view->registerMetaTag([
 							<span
                                 class="social-share-title pull-left text-capitalize">By <?= $article->author->name?> On <?= $article->getDate();?></span>
                             <ul class="text-center pull-right">
-                                <li><a class="s-facebook" href="#"><img src="/web/public/images/facebook.png" style="margin-right: 10px;" alt=""></a></li>
-                                <li><a class="s-twitter" href="#"><img src="/web/public/images/twitter.png" style="margin-right: 10px;" alt=""></a></li>
-                                <li><a class="s-instagram" href="#"><img src="/web/public/images/instagram.png" style="margin-right: 10px;" alt=""></a></li>
+                                <li><a class="s-facebook" href=""><img src="/web/public/images/facebook.png" style="margin-right: 10px;" alt=""></a></li>
+                                <li><a class="s-twitter" href=""><img src="/web/public/images/twitter.png" style="margin-right: 10px;" alt=""></a></li>
+                                <li><a class="s-instagram" href=""><img src="/web/public/images/instagram.png" style="margin-right: 10px;" alt=""></a></li>
                             </ul>
                         </div>
                     </div>

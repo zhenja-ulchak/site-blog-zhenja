@@ -11,6 +11,9 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+        'cache' => [
+            'class' => 'yii\caching\FileCache',
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'hIOfqJjbJb53LOVSkf9k7kQdMt8sNt_K',
@@ -32,6 +35,7 @@ $config = [
             'rules' => [
                 '' => 'site/index',                                
                 '<controller:\w+>/<action:\w+>/' => '<controller>/<action>',
+                ['pattern' => 'sitemap', 'route' => 'sitemap/default/index', 'suffix' => '.xml']
             ],
         ],
 
@@ -39,6 +43,18 @@ $config = [
     'modules' => [
         'admin' => [
             'class' => 'app\modules\admin\Module',
+        ],
+        'sitemap' => [
+            'class' => 'himiklab\sitemap\Sitemap',
+            'models' => [
+                // your models
+                'app\models\Article',
+            ],
+            'urls'=> [
+            
+            ],
+            'enableGzip' => true, // default is false
+            'cacheExpire' => 1, // 1 second. Default is 24 hours
         ],
     ],
     'params' => $params,

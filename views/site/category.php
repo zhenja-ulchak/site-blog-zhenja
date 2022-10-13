@@ -18,7 +18,7 @@ use yii\widgets\LinkPager;
                                 <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><img style="width: 100%;" src="<?= $article->getImage();?>" alt="" class="pull-left"></a>
 
                                 <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="post-thumb-overlay text-center">
-                                    <div class="text-uppercase text-center">View Post</div>
+                                    <div class="text-uppercase text-center">Оглянути</div>
                                 </a>
                             </div>
                         </div>

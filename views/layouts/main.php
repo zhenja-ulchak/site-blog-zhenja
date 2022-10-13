@@ -21,8 +21,12 @@ PublicAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
-   
-
+    <link rel="shortcut icon" href="/web/public/images/favicon.ico" type="image/x-icon">
+    <?php 
+    Yii::$app->view->registerMetaTag([
+        'name' => 'description',
+        'content' => 'Прості та смачні рецепти традиційної української кухні.Італійська кухня. Американська кухня. Страви різних країн. Торти.',
+        ]); ?>
     <?php $this->head() ?>
 </head>
 <body>
@@ -58,7 +62,7 @@ PublicAsset::register($this);
                     </ul>
                     <ul class=" text-uppercase">
                         <li>
-                            <a class="text-color-heder" href="<?= Url::toRoute(['site/allcat'])?>">категорії</a>
+                            <a class="text-color-heder" href="<?= Url::toRoute(['site/categoryall'])?>">категорії</a>
                         </li>
                     </ul>
                     <ul class=" text-uppercase text-color-heder">
@@ -142,10 +146,9 @@ PublicAsset::register($this);
                     </div>
                     <div class="address">
                   <span>
-                                <a class="s-facebook" href="#"><img src="/web/public/images/facebook.png" style="margin-right: 10px;" alt=""></a>
-                                <a class="s-twitter" href="#"><img src="/web/public/images/twitter.png" style="margin-right: 10px;" alt=""></a>
-                                <a class="s-instagram" href="#"><img src="/web/public/images/instagram.png" style="margin-right: 10px;" alt=""></a>
-                                </span>
+ <a class="s-facebook" href=""><img src="/web/public/images/facebook.png" style="margin-right: 10px;" alt=""></a>
+            <a class="s-twitter" href=""><img src="/web/public/images/twitter.png" style="margin-right: 10px;" alt=""></a>
+            <a class="s-instagram" href=""><img src="/web/public/images/instagram.png" style="margin-right: 10px;" alt=""></a>                                </span>
                         <h4 class="text-uppercase">Контактна інформація</h4>
 
                         <p> Україна м. Ужгород</p>

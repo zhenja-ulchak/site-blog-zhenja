@@ -7,9 +7,9 @@ use yii\widgets\LinkPager;
 <div class="block-main">
     <div class="main-container">
         <span  style="marg">
-            <a class="s-facebook" href="#"><img src="/web/public/images/facebook.png" style="margin-right: 10px;" alt=""></a>
-            <a class="s-twitter" href="#"><img src="/web/public/images/twitter.png" style="margin-right: 10px;" alt=""></a>
-            <a class="s-instagram" href="#"><img src="/web/public/images/instagram.png" style="margin-right: 10px;" alt=""></a>
+            <a class="s-facebook" href=""><img src="/web/public/images/facebook.png" style="margin-right: 10px;" alt=""></a>
+            <a class="s-twitter" href=""><img src="/web/public/images/twitter.png" style="margin-right: 10px;" alt=""></a>
+            <a class="s-instagram" href=""><img src="/web/public/images/instagram.png" style="margin-right: 10px;" alt=""></a>
         </span>
         <h1 class="first-block-h1">Кулінарний блог для всіх </h1>
         <p class="first-block-p"> Страви які підійдуть як і для кафе так , для дому також , тим хто любить мясо та солодке для діабетиків та людей яким потрібно тримати дієту</p>

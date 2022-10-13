@@ -5,6 +5,7 @@ namespace app\models;
 use Yii;
 use yii\data\Pagination;
 use yii\helpers\ArrayHelper;
+use himiklab\sitemap\behaviors\SitemapBehavior;
 
 /**
  * This is the model class for table "article".
@@ -199,4 +200,30 @@ class Article extends \yii\db\ActiveRecord
         $this->viewed += 1;
         return $this->save(false);
     }
+
+  
+
+    public function behaviors()
+    {
+        return [
+            'sitemap' => [
+                'class' => SitemapBehavior::className(),
+                'scope' => function ($model) {
+                    /** @var \yii\db\ActiveQuery $model */
+                    $model->select(['id', 'date']);
+                    // $model->andWhere(['is_deleted' => 0]);
+                },
+                'dataClosure' => function ($model) {
+                    /** @var self $model */
+                    return [
+                        'loc' => 'http://www.funny-coocking.fun/site/view?id=' . $model->id,
+                        'lastmod' => strtotime($model->date), // TODO: Добавить поле lastmodify при изменении данных писать в это поле дату изменения
+                        'changefreq' => SitemapBehavior::CHANGEFREQ_DAILY,
+                        'priority' => 0.8
+                    ];
+                }
+            ],
+        ];
+    }
+
 }
